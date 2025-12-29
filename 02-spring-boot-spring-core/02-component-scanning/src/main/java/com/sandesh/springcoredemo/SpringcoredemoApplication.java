@@ -8,12 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // 1. @EnableAutoConfiguration - Enables Spring Boot’s autoconfiguration support.
 // 2. @ComponentScan - Enables component scanning of current package. Also, recursively scans all the sub-packages as well.
 // 3. @Configuration - Able to register extra beans with @Bean or import other configuration classes.
-@SpringBootApplication(
-        // explicitly specifying the base packages to scan for spring components (beans).
-        scanBasePackages = {
-                "com.sandesh.springcoredemo",
-                "com.sandesh.util"
-        })
+@SpringBootApplication
 public class SpringcoredemoApplication {
 
 	public static void main(String[] args) {
